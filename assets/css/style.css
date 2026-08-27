@@ -133,7 +133,7 @@ p.lead{font-size:1.15rem; color:var(--ink-soft); max-width:56ch;}
 .site-header .wrap{display:flex; align-items:center; justify-content:space-between; height:84px;}
 .brand{display:flex; align-items:center; gap:12px;}
 .brand-mark{
-  width:38px; height:38px; border-radius:50%;
+  width:50px; height:50px; border-radius:50%;
   background:var(--card); border:1px solid var(--line);
   display:flex; align-items:center; justify-content:center;
   overflow:hidden; flex-shrink:0;
@@ -173,7 +173,7 @@ p.lead{font-size:1.15rem; color:var(--ink-soft); max-width:56ch;}
   .nav-links a.active::after{display:none;}
   .nav-links a.active{color:var(--gold-deep);}
   .nav-links .nav-mobile-cta{
-    margin-top:16px; display:flex; justify-content:center;
+    margin-top:16px; display:flex; justify-content:center;color: #fff;
   }
   .nav-toggle{display:block; position:relative; z-index:201;}
   .nav-right .btn-primary{display:none;}
@@ -181,14 +181,14 @@ p.lead{font-size:1.15rem; color:var(--ink-soft); max-width:56ch;}
 body.menu-open{overflow:hidden;}
 
 /* ---------- Hero (real photo scene) ---------- */
-.hero{position:relative; padding:70px 0 0; overflow:hidden;}
+.hero{position:relative; padding:0px 0 0; overflow:hidden;}
 .hero-scene{
   position:relative;
   min-height:640px;
   display:flex; align-items:flex-end;
   background:#1B2430;
 }
-.hero-scene .bg-photo{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+.hero-scene .bg-photo{position:absolute; inset:0; width:100%; height:100%; object-fit:fill;}
 .hero-scene .bg-overlay{
   position:absolute; inset:0;
   background:linear-gradient(180deg, rgba(20,25,31,0.15) 0%, rgba(20,25,31,0.55) 55%, rgba(14,17,21,0.88) 100%);
@@ -476,7 +476,7 @@ footer .lattice-bg{opacity:0.25;}
   section{padding:64px 0;}
   .cta-band{padding:60px 0;}
   .page-header{padding:48px 0 40px;}
-  .hero-copy{padding:70px 0 46px;}
+  .hero-copy{padding:70px 25px 46px;}
   .hero-scene{min-height:520px;}
   .hero-copy h1{max-width:none;}
   .section-head{margin-bottom:36px;}
@@ -490,7 +490,7 @@ footer .lattice-bg{opacity:0.25;}
   .nav-links{top:72px;}
   .brand-tag{display:none;}
   .hero-scene{min-height:440px;}
-  .hero-copy{padding:56px 0 36px;}
+  .hero-copy{padding:56px 25px 36px;}
   h1{font-size:clamp(2.1rem, 8vw, 2.8rem);}
   h2{font-size:clamp(1.6rem, 6vw, 2rem);}
   .ledger{grid-template-columns:repeat(2, 1fr);}
